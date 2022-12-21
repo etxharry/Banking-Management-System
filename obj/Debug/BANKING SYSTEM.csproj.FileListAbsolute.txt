@@ -1,0 +1,17 @@
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\BANKING SYSTEM.exe.config
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\BANKING SYSTEM.exe
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\BANKING SYSTEM.pdb
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\EntityFramework.dll
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\EntityFramework.SqlServer.dll
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\EntityFramework.xml
+D:\Huraira\C#\BANKING SYSTEM\bin\Debug\EntityFramework.SqlServer.xml
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING SYSTEM.csprojAssemblyReference.cache
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING_SYSTEM.Form1.resources
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING_SYSTEM.Properties.Resources.resources
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING SYSTEM.csproj.GenerateResource.cache
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING SYSTEM.csproj.CoreCompileInputs.cache
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING SYSTEM.csproj.CopyComplete
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING SYSTEM.exe
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING SYSTEM.pdb
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING_SYSTEM.Menu.resources
+D:\Huraira\C#\BANKING SYSTEM\obj\Debug\BANKING_SYSTEM.New_account.resources

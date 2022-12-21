@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bankModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bankEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="admin_table" EntityType="bankModel.admin_table" />
+    <EntitySet Name="Debits" EntityType="bankModel.Debit" />
+    <EntitySet Name="Deopsits" EntityType="bankModel.Deopsit" />
+    <EntitySet Name="Employees" EntityType="bankModel.Employee" />
+    <EntitySet Name="userAcoounts" EntityType="bankModel.userAcoount" />
+  </EntityContainer>
+  <EntityType Name="admin_table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Debit">
+    <Key>
+      <PropertyRef Name="sno" />
+    </Key>
+    <Property Name="sno" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AccountNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OldBalance" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Mode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DebAmount" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Deopsit">
+    <Key>
+      <PropertyRef Name="sno" />
+    </Key>
+    <Property Name="sno" Type="Int32" Nullable="false" />
+    <Property Name="AccountNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OldBalance" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Mode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Depamount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="userAcoount">
+    <Key>
+      <PropertyRef Name="Account_No" />
+    </Key>
+    <Property Name="Account_No" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Martial_status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mother_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Father_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Balance" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
